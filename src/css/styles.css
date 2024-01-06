@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(237, 236, 237);
+}
+
+.toDoList {
+  width: 100%;
+  max-width: 700px;
+}
+.toDoList__title {
+  font-size: 50px;
+  font-weight: 700;
+}
+.toDoList__subtitle {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.toDoList__create-task-input-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.toDoList__create-task-lable {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 500px;
+}
+.toDoList__create-task-input {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+}
+.toDoList__create-task-input::placeholder {
+  font-size: 30px;
+  font-weight: 400;
+}
+.toDoList__create-task-input:focus {
+  outline: none;
+}
+.toDoList__category-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.toDoList__category-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.toDoList__category-item-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+}
+.toDoList__category-item-business {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 3px solid rgb(50, 118, 235);
+  position: relative;
+  left: 11px;
+  bottom: 0;
+  box-shadow: 0px 0px 10px 0px rgb(50, 118, 235);
+}
+.toDoList__category-item-business::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(50, 118, 235);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: -12px;
+  left: 13px;
+  top: 25px;
+}
+.toDoList__category-item-business.active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgb(50, 118, 235);
+  left: 13px;
+  top: 25px;
+}
+.toDoList__category-item-personal {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 3px solid rgb(233, 76, 160);
+  position: relative;
+  left: 11px;
+  bottom: 0;
+  box-shadow: 0px 0px 10px 0px rgb(233, 76, 160);
+}
+.toDoList__category-item-personal::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(233, 76, 160);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: -12px;
+  left: 13px;
+  top: 25px;
+}
+.toDoList__category-item-personal.active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgb(233, 76, 160);
+  left: 13px;
+  top: 25px;
+}
+.toDoList__category-pick {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.toDoList__category-button {
+  margin-top: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #FFF;
+  background: rgb(50, 118, 235);
+  cursor: pointer;
+}
+.toDoList__tasks-list-title {
+  margin-top: 40px;
+  font-weight: 400;
+}/*# sourceMappingURL=styles.css.map */

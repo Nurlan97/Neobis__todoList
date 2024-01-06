@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+</head>
+
+<body>
+    <div class="toDoList">
+        <h1 class="toDoList__title">
+            What's up!
+        </h1>
+        <h2 class="toDoList__subtitle">
+            CREATE A TODO
+        </h2>
+        <form class="toDoList__create-task-input-form">
+            <!-- <div class="toDoList__create-task-input-container"> -->
+
+            <lable for="toDoList__create-task-input" class="toDoList__create-task-lable">
+                What's on your food todo list?
+            </lable>
+            <input type="text" class="toDoList__create-task-input" placeholder="e.g. get some milk">
+            <!-- </div> -->
+
+
+            <div class="toDoList__category-list">
+                <h2 class="toDoList__category-title">
+                    Pick a category
+                </h2>
+                <div class="toDoList__category-items">
+                    <div class="toDoList__category-item-container toDoList__category-item-business-container">
+                        <!-- <input type="radio" class="toDoList__category-item toDoList__category-item-business"> -->
+                        <div class="toDoList__category-item toDoList__category-item-business">
+
+                        </div>
+                        <p class="toDoList__category-pick">Business</p>
+                    </div>
+                    <div class="toDoList__category-item-container toDoList__category-item-personal-container">
+                        <!-- <input type="radio" class="toDoList__category-item toDoList__category-item-personal"> -->
+                        <div class="toDoList__category-item toDoList__category-item-personal">
+
+                        </div>
+                        <p class="toDoList__category-pick">Personal</p>
+
+                    </div>
+                </div>
+                <button class="toDoList__category-button">Add todo</button>
+
+            </div>
+        </form>
+
+        <h2 class="toDoList__tasks-list-title">TODO LIST</h2>
+        <ul class="toDoList__tasks-list">
+
+        </ul>
+
+    </div>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
