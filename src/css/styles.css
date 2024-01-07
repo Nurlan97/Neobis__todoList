@@ -8,10 +8,10 @@
 }
 
 body {
+  margin-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background: rgb(237, 236, 237);
 }
 
@@ -185,4 +185,58 @@ body {
 .toDoList__tasks-list-title {
   margin-top: 40px;
   font-weight: 400;
+}
+.toDoList__tasks-list > li {
+  background: #ffffff;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 28px;
+  margin: 20px 0;
+}
+.toDoList__tasks-list > li .taskName-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 46%;
+}
+.toDoList__tasks-list > li .taskName-container .category {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.toDoList__tasks-list > li .taskName-container .category div {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.toDoList__tasks-list > li .action-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.toDoList__tasks-list > li .action-btns .editBtn {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  background: rgb(216, 48, 146);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.toDoList__tasks-list > li .action-btns .deleteBtn {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  background: rgb(229, 72, 68);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

@@ -8,10 +8,11 @@
 }
 
 body {
+    margin-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    // height: 100vh;
     background: rgba(237, 236, 237, 255);
 }
 
@@ -37,7 +38,7 @@ body {
     //     flex-direction: column;
 
     // }
-    
+
     &__create-task-input-form {
         margin-top: 10px;
         display: flex;
@@ -104,7 +105,7 @@ body {
 
 
         &-item {
-            
+
 
             &-business {
                 content: '';
@@ -116,13 +117,13 @@ body {
                 height: 32px;
                 border-radius: 50%;
                 display: inline-block;
-                border: 3px solid rgba(50,118,235,255);
+                border: 3px solid rgba(50, 118, 235, 255);
 
                 position: relative;
                 left: 11px;
                 bottom: 0;
 
-                box-shadow: 0px 0px 10px 0px rgba(50,118,235,255);
+                box-shadow: 0px 0px 10px 0px rgba(50, 118, 235, 255);
 
 
                 &::before {
@@ -133,7 +134,7 @@ body {
                     transform: translate(-50%, -50%);
                     width: 20px;
                     height: 20px;
-                    border: 2px solid rgba(50,118,235,255);
+                    border: 2px solid rgba(50, 118, 235, 255);
                     border-radius: 50%;
                     display: inline-block;
                     cursor: pointer;
@@ -154,7 +155,7 @@ body {
                     height: 15px;
                     border-radius: 50%;
                     display: inline-block;
-                    background: rgba(50,118,235,255);
+                    background: rgba(50, 118, 235, 255);
                     left: 13px;
                     top: 25px;
                 }
@@ -170,13 +171,13 @@ body {
                 height: 32px;
                 border-radius: 50%;
                 display: inline-block;
-                border: 3px solid rgba(233,76,160,255);
+                border: 3px solid rgba(233, 76, 160, 255);
 
                 position: relative;
                 left: 11px;
                 bottom: 0;
 
-                box-shadow: 0px 0px 10px 0px rgba(233,76,160,255);
+                box-shadow: 0px 0px 10px 0px rgba(233, 76, 160, 255);
 
                 &::before {
                     content: '';
@@ -186,7 +187,7 @@ body {
                     transform: translate(-50%, -50%);
                     width: 20px;
                     height: 20px;
-                    border: 2px solid rgba(233,76,160,255);
+                    border: 2px solid rgba(233, 76, 160, 255);
                     border-radius: 50%;
                     display: inline-block;
                     cursor: pointer;
@@ -207,7 +208,7 @@ body {
                     height: 15px;
                     border-radius: 50%;
                     display: inline-block;
-                    background: rgba(233,76,160,255);
+                    background: rgba(233, 76, 160, 255);
                     left: 13px;
                     top: 25px;
                 }
@@ -232,16 +233,77 @@ body {
         }
     }
 
-    &__tasks-list-title {
-        margin-top: 40px;
-        font-weight: 400;
+    &__tasks-list {
+        
+        &-title {
+            margin-top: 40px;
+            font-weight: 400;
+        }
 
+        &>li {
+            background: #ffffff;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 28px;
+            margin: 20px 0;
+
+            .taskName-container {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                width: 46%;
+
+                .category {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    position: relative;
+
+                    div {
+                        width: 22px;
+                        height: 22px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                    }
+                }
+
+
+            }
+
+            .action-btns {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .editBtn {
+                    padding: 10px;
+                    font-size: 15px;
+                    border-radius: 5px;
+                    background: rgba(216, 48, 146, 255);
+                    color: #ffffff;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .deleteBtn {
+                    padding: 10px;
+                    font-size: 15px;
+                    border-radius: 5px;
+                    background: rgba(229, 72, 68, 255);
+                    color: #ffffff;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+
+
+
+        }
     }
-
-    
-
-
-
-
-
 }
